@@ -1,122 +1,85 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Medium Length Professional CV
-% LaTeX Template
-% Version 2.0 (8/5/13)
-%
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% Original author:
-% Rishi Shah 
-%
-% Important note:
-% This template requires the resume.cls file to be in the same directory as the
-% .tex file. The resume.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
-
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 \name{Chandler Swift} % Your name
-\address{1234 Peter Peterson Street || Duluth, MN 55812} % Your address
-%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary address (optional)
-\address{651-488-8888 || email@aol.org} % Your phone number and email
+\address{320-296-4833 --- chandler@chandlerswift.com}
+\address{17399 Barberry Circle, Eden Prairie, MN 55346}
+%\address{123 Pleasant Lane \\ City, State 12345} % secondary address (optional)
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
 \begin{rSection}{Education}
 
-{\bf University of Minnesota Duluth} \hfill {\em August 2016 - Present} 
-\\ B.S. in Computer Science with a minor in Cognitive Science
-\\ Expected date of graduation: December 2020
-
-%Minor in Linguistics \smallskip \\
-%Member of Eta Kappa Nu \\
-%Member of Upsilon Pi Epsilon \\
-
+    {\bf University of Minnesota Duluth} \hfill {\em August 2015--December 2019} 
+    \\ B.S. in Computer Science, with a minor in Mathematics
+    \\ Cum Laude (GPA 3.89), Dean's list 9/9 semesters
 
 \end{rSection}
 
-%\begin{rSection}{Career Objective}
-%To acquire an internship in the field of Computer Science.
-%\end{rSection}
-%--------------------------------------------------------------------------------
-%    Projects And Seminars
-%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Experience}
+
+    \begin{rSubsection}{Pearson VUE: \textnormal{Associate Cloud Engineer}}{\em Dec 2019--Present}{}{}
+        \item Implemented code in Ansible and Terraform to deploy and configure infrastructure as code.
+        \item Worked with Jenkins and Azure DevOps to insure Continuous Integration of that infrastructure.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Bravo Reporting Systems: \textnormal{PHP Software Developer}}{\em May 2015--Dec 2019}{}{}
+        \item Developed a PHP/Laravel web application to provide action item
+            tracking and reporting.
+        \item Provided customer-facing end-user support for technical issues.
+        \item Implemented continuous integration system to provide automated testing,
+            compilation, and deployment.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Dash360: \textnormal{.NET Software Developer}}{\em May 2019--Dec 2019}{}{}
+        \item Developed a C\# software-as-a-service platform for collecting and
+            reporting project management data.
+    \end{rSubsection}
+
+    \begin{rSubsection}{Lockheed Martin Aeronautics: \textnormal{Cybersecurity Engineering Intern}}{\em May--August 2018}{}{}
+        \item Blockchain
+    \end{rSubsection}
+
+    \begin{rSubsection}{Lockheed Martin Aeronautics: \textnormal{Cybersecurity Engineering Intern}}{\em June--August 2017}{}{}
+        \item asdf
+    \end{rSubsection}
+
+\end{rSection}
+
 \begin{rSection}{Projects}
 
-\begin{rSubsection}{Threaded Allocator}{}{}\\
-\item Collaborated with partner to create a simulated CPU allocator
-\item Worked with pthreads library in C 
-\item Simulated context switches that would happen in a Linux Kernel
-\end{rSubsection}
+    \begin{rSubsection}{Do This and Nothing More \textnormal{(Summer 2019)}}{\href{https://github.com/UMDLARS/dtanm}{github.com/UMDLARS/dtanm}}{}\\
+        \item Architected, designed, and developed a Flask web app frontend and
+            git/Python backend for scoring user-developed and submitted
+            applications against a known-good piece of software.
+        \item Implemented Docker sandboxing of all user-submitted code, caching layers to
+            improve performance, and an extensive user interface for interacting
+            with the framework through a browser.
+        \item Refined design by soliciting and incorporating feedback from
+            two semesters' Computer Security classes.
+    \end{rSubsection}
 
-\begin{rSubsection}{Javascript-like Interpreter}{}{}\\
-\item Used JFLEX and CUP to create an interpreted language using a provided grammar
-\item Reworked the grammar to be more efficient and cut down on file processing time
-\item Programmed the interpreter in Java, and enabled my language to handle if statements, while loops, and some recursion
-\end{rSubsection}
+    \begin{rSubsection}{UMD CYLGame Framework \textnormal{(Summer 2019)}}{\href{https://github.com/UMDLARS/CYLGame}{github.com/UMDLARS/CYLGame}}{}\\
+        \item Designed competitions to run on UMD's CYLGame framework.
+        \item Added documentation and designed helper tools to ease
+            development of further competitions.
+    \end{rSubsection}
 
 \end{rSection}
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Skills}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programing Languages \ & C, C++, Python, Java \\
-Tools & Git, UNIX, Vim, Android Studio, Visual Studio Code \\
-Operating Systems & Linux, OSX, Windows 10
-\end{tabular}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Programing Languages  & Strong Python, C, Go; some Javascript, C++, Java, and C\# \\
+        Tools & Ansible, Terraform, Jenkins, Git, Linux systems administration \\
+        Platforms & Amazon Web Services, Azure, GitHub, Travis CI \\
+    \end{tabular}
 
 \end{rSection}
 
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Relevant Classwork}
-%Operating Systems, Computer Security, Computer Networks, Software Engineering, Compiler Design, Artificial Intelligence
-%\end{rSection}
-
-\begin{rSection}{Work Experience}
-
-\begin{rSubsection}{Firefly Computers}{\em Summer of 2019}{White Glove Associate/Tech Assistant}{}
-\item Ensured Chromebooks that schools ordered were enrolled to their respective schools
-\item Worked in RMA department to handle warrenty requests from clients
-\item Programmed Arduino Boards to simulate keystrokes that would enroll chromebooks to schools
-\end{rSubsection}
-
-\end{rSection}
-
-% Extra Curricular
-%----------------------------------------------------------------------------------------
-\begin{rSection}{Extra-Curricular} \itemsep -3pt
-\item Member of ACM Club Duluth Chapter (2016- )
-\item President of ACM Club Duluth Chapter (2018- )
-\item Participant in Digi-Key Collegiate Computing Competition VERSION 2.0.18
-\item Member of UMD boxing club\\\\
-
-
-%\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
- %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
- %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
- %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
-\end{rSection} 
-
-\centering\textbf{References available upon request}
+\centering\textit{References available upon request.}
 
 \end{document}
