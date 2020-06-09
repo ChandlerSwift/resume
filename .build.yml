@@ -1,0 +1,11 @@
+image: archlinux
+packages:
+  - texlive-most
+sources:
+  - https://git.sr.ht/~chandlerswift/resume
+tasks:
+  - setup: |
+      cd resume
+      make
+artifacts:
+  - resume/resume.pdf
