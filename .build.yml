@@ -3,9 +3,17 @@ packages:
   - texlive-most
 sources:
   - https://git.sr.ht/~chandlerswift/resume
+secrets:
+  - 43ddf79a-a952-4aca-a588-9ffb86dc1073
 tasks:
-  - setup: |
+  - build: |
       cd resume
       make
+  - publish: |
+      git describe && \
+      curl \
+        -H "Authorization: token `cat ~/.oauth_token`" \
+        -d @resume/resume.pdf \
+        https://git.sr.ht/api/repos/resume/artifacts/`git describe`
 artifacts:
   - resume/resume.pdf
