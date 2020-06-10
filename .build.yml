@@ -14,7 +14,7 @@ tasks:
       git describe --exact-match && \
       curl \
         -H "Authorization: token `cat ~/.oauth_token`" \
-        -d @resume/resume.pdf \
+        -F file=@resume.pdf \
         https://git.sr.ht/api/repos/resume/artifacts/`git describe`
 artifacts:
   - resume/resume.pdf
