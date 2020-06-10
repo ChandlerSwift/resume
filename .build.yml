@@ -10,7 +10,8 @@ tasks:
       cd resume
       make
   - publish: |
-      git describe && \
+      cd resume
+      git describe --exact-match && \
       curl \
         -H "Authorization: token `cat ~/.oauth_token`" \
         -d @resume/resume.pdf \
