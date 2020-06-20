@@ -16,6 +16,6 @@ tasks:
       curl \
         -H "Authorization: token `cat ~/.oauth_token`" \
         -F "file=@resume.pdf;filename=chandlerswift-`date +%F`.pdf" \
-        https://git.sr.ht/api/repos/resume/artifacts/`git describe`
+        https://git.sr.ht/api/repos/resume/artifacts/`git describe`|| true
 artifacts:
   - resume/resume.pdf
