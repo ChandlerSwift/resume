@@ -4,7 +4,7 @@ packages:
 sources:
   - https://git.sr.ht/~chandlerswift/resume
 secrets:
-  - 43ddf79a-a952-4aca-a588-9ffb86dc1073
+  - f79f097e-719c-40a5-8bd8-cc772ca4bf93
 tasks:
   - build: |
       cd resume
